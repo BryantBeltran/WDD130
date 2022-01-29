@@ -89,3 +89,6 @@ footer a:hover{
 footer h3 a:hover{
     text-decoration: underline;
 }
+.card-img{
+    width:fit-content;
+}
