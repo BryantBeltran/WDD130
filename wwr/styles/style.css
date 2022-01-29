@@ -1,4 +1,5 @@
 
+
 body{
     font-size: 100%;
     background-color: rgb(134, 170, 117);
@@ -55,18 +56,22 @@ footer{
 }
 .home-title{
     color: greenyellow;
+    font-size: 4em;
 }
 h4{
     color: rgb(115, 255, 0);
+    font-size: 2em;
 }
 .msg h2{
     color: rgb(178, 252, 5);
+    font-size: 3em;
 }
 .msg p{
-    color: rgb(20, 74, 189)
+    color: rgb(20, 74, 189);
+    font-size: 1.3em;
 }
 footer h3{
-    color: rgb(22, 155, 196);
+    color: rgb(0, 0, 0);
 }
 footer a{
     color: rgb(0, 4, 255);
