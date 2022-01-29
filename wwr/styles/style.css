@@ -86,14 +86,15 @@ footer a:hover{
 #hero-img{
     width: 100%;
 }
+
 footer h3 a:hover{
     text-decoration: underline;
 }
 .card-img{
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 .mountains{
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
