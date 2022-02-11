@@ -1,5 +1,5 @@
 /* font setup */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); /* use generic font*/
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -168,4 +168,8 @@ footer .social img {
 .camping-card,
 .rapids-card {
     margin: 200px 0;
+}
+
+.logo {
+    padding-bottom: 15px;
 }
