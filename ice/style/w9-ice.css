@@ -1,0 +1,24 @@
+.homegrid{
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+div img{
+    width: 100%;
+}
+
+.heading{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-items: center;
+}
+
+.text{
+    grid-row: 3/4;
+}
