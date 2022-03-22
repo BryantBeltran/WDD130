@@ -19,15 +19,48 @@
                 </a>
                 <section class="head-msg">
                     <nav>
-                        <a href="index.html">Home</a>
-                        <a href="men-clothing.html">Men</a>
-                        <a href="women-clothing.html">Women</a>
-                        <a href="contactus.html">Contact Us</a>
+                            <a href="index.html">Home</a>
+                            <a href="men-clothing.html">Men</a>
+                            <a href="women-clothing.html">Women</a>
+                            <a href="contactus.html">Contact Us</a>
+                        <div class="grid-setup-cart">
+                            <img class="logo-shop" src="images/carticon.png" alt="shopping cart">
+                        </div>
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Login</button>
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="images/logo.jpg" alt="M&B icon" class="logo">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
                     </nav>
                 </section>
-                <div class="grid-setup-cart">
-                    <img class="logo-shop" src="images/carticon.png" alt="shopping cart">
-                </div>
+
             </div>
         </header>
 
@@ -55,49 +88,53 @@
                     <button>Shop Now</button>
                 </section>
                 <div class="men-image">
-                    <img class="men-denim" src="images/welcomepage2.jpg" alt="men denim clothing">
+                    <img class="image" src="images/welcomepage2.jpg" alt="men denim clothing">
                     <h4>
                         <a href="men-clothing.html">Mens</a>
                     </h4>
                 </div>
                 <div class="women-image">
-                    <img class="women-style" src="images/style-clothing.jpg" alt="women style authentic">
+                    <img class="image" src="images/style-clothing.jpg" alt="women style authentic">
                     <h4>
                         <a href="women-clothing.html">Womens</a>
                     </h4>
                 </div>
             </div>
-        </main>
-
-
-
-
-
-        <footer>
-            <h3>
-                M&B Clothing Inc &copy; 2022 - Bryant Beltran
-            </h3>
-            <h3>
-                <a href="contactus.html">Contact Us</a>
-            </h3>
-            <h3>
-                <a href="site-plan.html">Site Plan</a>
-            </h3>
-
-            <div class="social">
-                <a href="https://facebook.com" target="blank">
-                    <img src="images/facebook.png" alt="facebook icon" class="logo">
-                </a>
-                <a href="https://twitter.com" target="blank">
-                    <img src="images/twitter.png" alt="twitter icon" class="logo">
-                </a>
-                <a href="https://instagram.com" target="blank">
-                    <img src="images/instagram.png" alt="instagram icon" class="logo">
-                </a>
-            </div>
-
-        </footer>
     </div>
+    </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <h3>
+            M&B Clothing Inc &copy; 2022 - Bryant Beltran
+        </h3>
+        <h3>
+            <a href="contactus.html">Contact Us</a>
+        </h3>
+        <h3>
+            <a href="site-plan.html">Site Plan</a>
+        </h3>
+
+        <div class="social">
+            <a href="https://facebook.com" target="blank">
+                <img src="images/facebook.png" alt="facebook icon" class="logo">
+            </a>
+            <a href="https://twitter.com" target="blank">
+                <img src="images/twitter.png" alt="twitter icon" class="logo">
+            </a>
+            <a href="https://instagram.com" target="blank">
+                <img src="images/instagram.png" alt="instagram icon" class="logo">
+            </a>
+        </div>
+
+    </footer>
+    </div>
+
+
 </body>
 
 </html>
