@@ -10,48 +10,57 @@
 </head>
 
 <body>
-    <header>
-        <a class="logo-link" href="index.html">
-            <img src="images/logo.jpg" alt="clothing logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="men-clothing.html">Men</a>
-            <a href="women-clothing.html">Women</a>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
-        <img src="images/carticon.png" alt="shopping cart">
-    </header>
-    <main>
-        <h3>Catalogue For Men</h3>
+    <div id="content">
+        <header>
+            <div class="heading">
 
-        <h2>T-Shirts - Elegance at a Glance</h2>
-        <div class="clothing-image">
-            <img src="images/menshirt3.jpg" alt="shirt men 1">
-            <button>Add To Cart</button>
-            <img src="images/shirtmen1.jpg" alt="shirt men 2">
-            <button>Add To Cart</button>
-            <img src="images/shirtmen2.jpg" alt="shirt men 3">
-            <button>Add To Cart</button>
-        </div>
-        <h2>Shoes - Built to Flex</h2>
-        <div class="Shoes-image">
-            <img src="images/menshoes1.jpg" alt="men shoes 1">
-            <button>Add To Cart</button>
-            <img src="images/1shoes2.jpg" alt="men shoes 2">
-            <button>Add To Cart</button>
-            <img src="images/2shoes3.jpg" alt="men shoes 3">
-            <button>Add To Cart</button>
-        </div>
-        <h2>Jackets - Built to Drip</h2>
-        <div class="jackets-image">
-            <img src="images/3menjacket.jpg" alt="men jacket 1">
-            <button>Add To Cart</button>
-            <img src="images/imagemen.jpg" alt="men jacket 2">
-            <button>Add To Cart</button>
-            <img src="images/4menjacket3.jpg" alt="men jacket 3">
-            <button>Add To Cart</button>
-        </div>
+                <a class="logo-link" href="index.html">
+                    <img class="welcome-logo" src="images/logo.jpg" alt="M&B Clothing">
+                </a>
+                <section class="head-msg">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="men-clothing.html">Men</a>
+                        <a href="women-clothing.html">Women</a>
+                        <a href="contactus.html">Contact Us</a>
+                        <div class="grid-setup-cart">
+                            <img class="logo-shop" src="images/carticon.png" alt="shopping cart">
+                        </div>
+                    </nav>
+                </section>
+
+            </div>
+        </header>
+        <main>
+            <h3>Catalogue For Men</h3>
+
+            <h2>T-Shirts - Elegance at a Glance</h2>
+            <div class="clothing-image">
+                <img src="images/menshirt3.jpg" alt="shirt men 1">
+                <button>Add To Cart</button>
+                <img src="images/shirtmen1.jpg" alt="shirt men 2">
+                <button>Add To Cart</button>
+                <img src="images/shirtmen2.jpg" alt="shirt men 3">
+                <button>Add To Cart</button>
+            </div>
+            <h2>Shoes - Built to Flex</h2>
+            <div class="Shoes-image">
+                <img src="images/menshoes1.jpg" alt="men shoes 1">
+                <button>Add To Cart</button>
+                <img src="images/1shoes2.jpg" alt="men shoes 2">
+                <button>Add To Cart</button>
+                <img src="images/2shoes3.jpg" alt="men shoes 3">
+                <button>Add To Cart</button>
+            </div>
+            <h2>Jackets - Built to Drip</h2>
+            <div class="jackets-image">
+                <img src="images/3menjacket.jpg" alt="men jacket 1">
+                <button>Add To Cart</button>
+                <img src="images/imagemen.jpg" alt="men jacket 2">
+                <button>Add To Cart</button>
+                <img src="images/4menjacket3.jpg" alt="men jacket 3">
+                <button>Add To Cart</button>
+            </div>
 
 
 
@@ -62,30 +71,44 @@
 
 
 
-    </main>
+        </main>
 
-    <footer>
-        <h3>
-            M&B Clothing Inc &copy; 2022 - Bryant Beltran
-        </h3>
-        <a href="https://facebook.com">
-            <img src="images/facebook.png" alt="facebook icon" class="logo">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.png" alt="twitter icon" class="logo">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.png" alt="instagram icon" class="logo">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="men-clothing.html">Men</a>
-            <a href="women-clothing.html">Women</a>
-            <a href="contactus.html">Contact Us</a>
-            <a href="site-plan.html">Site Plan</a>
-        </nav>
+        <footer>
+            <h3>
+                M&B Clothing Inc &copy; 2022 - Bryant Beltran
+            </h3>
+            <h3>
+                <a href="contactus.html">Contact Us</a>
+            </h3>
+            <h3>
+                <a href="site-plan.html">Site Plan</a>
+            </h3>
 
-    </footer>
+            <div class="social">
+                <a href="https://facebook.com" target="blank">
+                    <img src="images/facebook.png" alt="facebook icon" class="logo">
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <img src="images/twitter.png" alt="twitter icon" class="logo">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/instagram.png" alt="instagram icon" class="logo">
+                </a>
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
