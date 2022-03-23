@@ -19,15 +19,17 @@
                 </a>
                 <section class="head-msg">
                     <nav>
-                            <a href="index.html">Home</a>
-                            <a href="men-clothing.html">Men</a>
-                            <a href="women-clothing.html">Women</a>
-                            <a href="contactus.html">Contact Us</a>
+                        <a href="index.html">Home</a>
+                        <a href="men-clothing.html">Men</a>
+                        <a href="women-clothing.html">Women</a>
+                        <a href="contactus.html">Contact Us</a>
                         <div class="grid-setup-cart">
                             <img class="logo-shop" src="images/carticon.png" alt="shopping cart">
                         </div>
-                        <button onclick="document.getElementById('id01').style.display='block'"
-                            style="width:auto;">Login</button>
+                        <div class="login-button">
+                            <button onclick="document.getElementById('id01').style.display='block'"
+                                style="width:auto;">Login</button>
+                        </div>
 
                         <div id="id01" class="modal">
 
@@ -44,8 +46,9 @@
 
                                     <label for="psw"><b>Password</b></label>
                                     <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                    <button type="submit">Login</button>
+                                    <div class="login-button">
+                                        <button type="submit">Login</button>
+                                    </div>
                                     <label>
                                         <input type="checkbox" checked="checked" name="remember"> Remember me
                                     </label>
@@ -60,7 +63,6 @@
                         </div>
                     </nav>
                 </section>
-
             </div>
         </header>
 
@@ -100,40 +102,50 @@
                     </h4>
                 </div>
             </div>
+
+        </main>
+
+
+
+
+
+        <footer>
+            <h3>
+                M&B Clothing Inc &copy; 2022 - Bryant Beltran
+            </h3>
+            <h3>
+                <a href="contactus.html">Contact Us</a>
+            </h3>
+            <h3>
+                <a href="site-plan.html">Site Plan</a>
+            </h3>
+            <div class="social">
+                <!-- social media images icon w/ links-->
+                <a href="https://facebook.com" target="_blank">
+                    <img class="icon" src="images/facebook.png" alt="facebook icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="icon" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="icon" src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+
+        </footer>
     </div>
-    </div>
-    </main>
 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-
-
-
-    <footer>
-        <h3>
-            M&B Clothing Inc &copy; 2022 - Bryant Beltran
-        </h3>
-        <h3>
-            <a href="contactus.html">Contact Us</a>
-        </h3>
-        <h3>
-            <a href="site-plan.html">Site Plan</a>
-        </h3>
-
-        <div class="social">
-            <a href="https://facebook.com" target="blank">
-                <img src="images/facebook.png" alt="facebook icon" class="logo">
-            </a>
-            <a href="https://twitter.com" target="blank">
-                <img src="images/twitter.png" alt="twitter icon" class="logo">
-            </a>
-            <a href="https://instagram.com" target="blank">
-                <img src="images/instagram.png" alt="instagram icon" class="logo">
-            </a>
-        </div>
-
-    </footer>
-    </div>
-
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
