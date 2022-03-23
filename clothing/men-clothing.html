@@ -26,15 +26,50 @@
                         <div class="grid-setup-cart">
                             <img class="logo-shop" src="images/carticon.png" alt="shopping cart">
                         </div>
+                        <div class="login-button">
+                            <button onclick="document.getElementById('id01').style.display='block'"
+                                style="width:auto;">Login</button>
+                        </div>
+
+                        <div id="id01" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="images/logo.jpg" alt="M&B icon" class="logo">
+                                </div>
+
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                    <div class="login-button">
+                                        <button type="submit">Login</button>
+                                    </div>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
                     </nav>
                 </section>
-
             </div>
         </header>
         <main>
-            <h3>Catalogue For Men</h3>
+            <h2>Catalogue For Men</h2>
 
-            <h2>T-Shirts - Elegance at a Glance</h2>
+            <p>T-Shirts - Elegance at a Glance</p>
+
             <div class="clothing-image">
                 <img src="images/menshirt3.jpg" alt="shirt men 1">
                 <button>Add To Cart</button>
@@ -43,7 +78,7 @@
                 <img src="images/shirtmen2.jpg" alt="shirt men 3">
                 <button>Add To Cart</button>
             </div>
-            <h2>Shoes - Built to Flex</h2>
+            <p>Shoes - Built to Flex</p>
             <div class="Shoes-image">
                 <img src="images/menshoes1.jpg" alt="men shoes 1">
                 <button>Add To Cart</button>
@@ -52,7 +87,7 @@
                 <img src="images/2shoes3.jpg" alt="men shoes 3">
                 <button>Add To Cart</button>
             </div>
-            <h2>Jackets - Built to Drip</h2>
+            <p>Jackets - Built to Drip</p>
             <div class="jackets-image">
                 <img src="images/3menjacket.jpg" alt="men jacket 1">
                 <button>Add To Cart</button>
@@ -61,14 +96,6 @@
                 <img src="images/4menjacket3.jpg" alt="men jacket 3">
                 <button>Add To Cart</button>
             </div>
-
-
-
-
-
-
-
-
 
 
         </main>
@@ -83,21 +110,22 @@
             <h3>
                 <a href="site-plan.html">Site Plan</a>
             </h3>
-
             <div class="social">
-                <a href="https://facebook.com" target="blank">
-                    <img src="images/facebook.png" alt="facebook icon" class="logo">
+                <!-- social media images icon w/ links-->
+                <a href="https://facebook.com" target="_blank">
+                    <img class="icon" src="images/facebook.png" alt="facebook icon">
                 </a>
-                <a href="https://twitter.com" target="blank">
-                    <img src="images/twitter.png" alt="twitter icon" class="logo">
+                <a href="https://twitter.com" target="_blank">
+                    <img class="icon" src="images/twitter.png" alt="twitter icon">
                 </a>
-                <a href="https://instagram.com" target="blank">
-                    <img src="images/instagram.png" alt="instagram icon" class="logo">
+                <a href="https://instagram.com" target="_blank">
+                    <img class="icon" src="images/instagram.png" alt="instagram icon">
                 </a>
             </div>
 
         </footer>
     </div>
+
     <script>
         // Get the modal
         var modal = document.getElementById('id01');
