@@ -198,19 +198,23 @@ div p {
 .clothing-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
+  padding-bottom: 200px;
+  padding-top: 25px;
 }
 
 .shoes-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
+  padding-bottom: 200px;
 }
 
 .jackets-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
+  padding-bottom: 200px;
 }
 
 
@@ -232,9 +236,6 @@ div p {
   cursor: pointer;
 }
 
-.jacket-size {
-  padding: 1px;
-}
 
 
 
