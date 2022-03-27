@@ -31,7 +31,7 @@ header nav a:hover {
   padding-top: 10px;
 }
 
-.logo{
+.logo {
   width: 80px;
 }
 
@@ -193,6 +193,49 @@ body {
 div p {
   font-family: "Oswald", 'Times New Roman', serif;
 }
+
+
+.clothing-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.shoes-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.jackets-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+
+.clothing-image img,
+.jackets-image img,
+.shoes-image img {
+  width: 100%;
+  padding: 50px;
+}
+
+.clothing-image button,
+.jackets-image button,
+.shoes-image button {
+  border: none;
+  background-color: #6C464F;
+  color: rgb(255, 255, 255);
+  padding: 14px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.jacket-size {
+  padding: 1px;
+}
+
 
 
 
